@@ -1,3 +1,3 @@
 #!/bin/sh
 set -euo pipefail
-/var/task/completeaws -Xmx128m -Djava.library.path=$(pwd)
+/var/task/completeaws -Xmx1g -Djava.library.path=$(pwd)

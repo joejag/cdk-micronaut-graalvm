@@ -9,7 +9,7 @@ export class BStack extends cdk.Stack {
     const handler = new lambda.Function(this, "WidgetHandler", {
       runtime: lambda.Runtime.PROVIDED,
       code: lambda.Code.fromAsset("../build/function.zip"),
-      memorySize: 512,
+      memorySize: 1024,
       handler: "example.micronaut.BookRequestHandler",
     })
 
